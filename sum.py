@@ -4,7 +4,7 @@ def sum(arr):
   ## We give an identifier to recursion function to keep track of the index and not iterating at every step. So time complexity is now O(n).
   print(__sum(arr,0))
    
-# Method 1
+## Method 1
 def _sum(n):
   ## Setting up our base case, that when array of integers become empty then return 0.
   if len(n) == 0:
@@ -13,7 +13,7 @@ def _sum(n):
   ## Break down the array and call the function with rest of the chunk.
   return n[0] + _sum(n[1:])
  
- # Method 2
+ ## Method 2
  def __sum(arr,idx):
   if(idx == len(arr)):
     return 0
